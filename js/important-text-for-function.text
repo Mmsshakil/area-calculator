@@ -1,0 +1,33 @@
+
+// take the value from h
+function inputTake(inputId) {
+    const inputField = document.getElementById(inputId);
+    const inputValueString = inputField.value;
+    const inputValue = parseFloat(inputValueString);
+    return inputValue;
+
+}
+
+// set area text
+function setAreaText(elementId, area) {
+    const element = document.getElementById(elementId);
+    element.innerText = area;
+}
+
+
+function buttonTraiangle() {
+
+    // call the input funtion and set the traingle id as parameter 
+    const traingleBase = inputTake('traingleB');
+    // call the input function and set the input value in traingleHeight
+    const traingleHeight = inputTake('traingleH');
+
+    // caolculate the area value
+    const area = 0.5 * traingleBase * traingleHeight;
+
+    // set the area text
+    setAreaText('traingleAreaText', area);
+
+
+
+}
