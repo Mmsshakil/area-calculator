@@ -1,23 +1,29 @@
 
 // take the input values
-function inputElement(input) {
-    const inputItem = document.getElementById(input);
-    const inputItemString = inputItem.value;
-    const inputValue = parseFloat(inputItemString);
-    if(isNaN(inputValue)){
-        alert('Please Enter Number');
-        return 0;
-    }
+// ------------------------
+// function inputElement(input) {
+//     const inputItem = document.getElementById(input);
+//     const inputItemString = inputItem.value;
+//     const inputValue = parseFloat(inputItemString);
+//     if(isNaN(inputValue)){
+//         alert('Please Enter Number');
+//         return 0;
+//     }
 
-    return inputValue;
-}
+//     return inputValue;
+// }
 
-// set the area value
-function areaTextSet(areaText, area){
-    const previousArea = document.getElementById(areaText);
-    previousArea.innerText = area;
-}
+// // set the area value
+// function areaTextSet(areaText, area){
+//     const previousArea = document.getElementById(areaText);
+//     previousArea.innerText = area;
+// }
 
+// function addToCalculationEntry(areaType, area){
+//     console.log('calculation clicked');
+// }
+
+// ---------------------------------
 
 // this was rectangle functions
 // first call the button 
