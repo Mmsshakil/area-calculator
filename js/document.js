@@ -4,6 +4,11 @@ function inputElement(input) {
     const inputItem = document.getElementById(input);
     const inputItemString = inputItem.value;
     const inputValue = parseFloat(inputItemString);
+    if(isNaN(inputValue)){
+        alert('Please Enter Number');
+        return 0;
+    }
+
     return inputValue;
 }
 
